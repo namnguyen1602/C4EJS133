@@ -47,15 +47,13 @@ body{
   background-color: var(--mau-xanh);
   margin: 100px 300px;
   padding: 30px;
-  position: absolute;
+  position: relative;
 }
 
 .name{
-  position: sticky;
   padding: 20px;
-  margin: 20% 0;
+  margin: 10px 0;
   float: left;
   background-color: gray;
-  align-items: center;
   position: sticky;
 }
