@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/8b3d116e20.js" crossorigin="anonymous"></script>
+  <title>Gre Shop</title>
+  <style>
+    html, body{
+      height: 100%;
+      margin: 0;
+    }
+
+    .container{
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .left-container{
+      background-color: #f6f6f6;
+      width: 40%;
+      height: 80%;
+      flex-direction: column;
+      align-items: center;
+      display: flex;
+    }
+
+    .signin-option p:first-child{
+      font-size: 64px;
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
+
+    .signin-option p:last-child{
+      text-align: center;
+      margin-bottom: 80px;
+    }
+
+    .signin-icons{
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      font-size: 30px;
+    }
+
+    .signin-input{
+      width: 80%;
+    }
+    .signin-input input{
+      width: 100%;
+      display: block;
+      margin: 15px auto;
+      height: 35px;
+      background-color: #EBEBEB;
+      border: 0;
+      border-top: 2px #00FF29 solid;
+      text-indent: 10px;
+    }
+
+    .signin-check-password{
+      background-color: #e5e0e0;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .signin-footer{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .signin-footer button{
+      background-color: #49FF50;
+      border: 0;
+      height: 50px;
+      width: 190px;
+      border-radius: 10px;
+      color: white;
+      font-size: 24px;
+    }
+    
+    
+    .right-container{
+      background: #0AFF31;
+      width: 40%;
+      height: 80%;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .right-container a{
+      color: white;
+      text-decoration: none;
+      margin-bottom: 20px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .introduction{
+      margin: auto;
+    }
+    .introduction p:first-child{
+      font-size: 70px;
+      font-weight: bold;
+      text-align: center;
+    }
+    .introduction p:last-child{
+      font-size: 30px;
+      font-weight: bold;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left-container">
+      <div class="signin-option">
+        <p>Đăng Nhập</p>
+        <div class="signin-icons">
+          <i class="fa-brands fa-google"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-apple"></i>
+        </div>
+        <p>Hoặc đăng nhập bằng tài khoản của bạn</p>
+      </div>
+      <div class="signin-input">
+        <input type="text" placeholder="Email">
+        <input type="password" placeholder="Mật Khẩu">
+      </div>
+      <div class="signin-check-password">
+        <input type="checkbox">
+        <label for="Mật Khẩu"> Nhớ Mật Khẩu</label>
+      </div>
+      <div class="signin-footer">
+        <p>Quên Mật Khẩu ?</p>
+        <button>Đăng Nhập</button>
+      </div>
+    </div>
+    <div class="right-container">
+      <div class="introduction">
+        <p>GRESHOP</p>
+        <p>Chào mừng bạn đến với GreShop</p>
+      </div>
+      <a href="signup.html">Tạo Tài Khoản</a>
+    </div>
+  </div>
+</body>
+</html>

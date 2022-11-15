@@ -1,0 +1,61 @@
+:root{
+  --mau-xanh: #c1f5e7;
+}
+*{
+ font-family: 'Roboto', sans-serif;
+ padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  position: relative;
+}
+.image{
+  width: 80%;
+  position: absolute;
+  margin-left: 500px;
+}
+
+.radio-input:checked + label{
+  color: red;
+}
+
+.submit.btn{
+  text-align: center;
+}
+.material-symbols-outlined{
+  vertical-align: sub;
+}
+
+.material-symbols-outlined{
+  color:yellow;
+}
+
+.main{
+  position: relative;
+  padding: 0;
+}
+.header{
+  background-color: antiquewhite;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  height: 70px;
+}
+
+.content{
+  background-color: var(--mau-xanh);
+  margin: 100px 300px;
+  padding: 30px;
+  position: absolute;
+}
+
+.name{
+  position: sticky;
+  padding: 20px;
+  margin: 20% 0;
+  float: left;
+  background-color: gray;
+  align-items: center;
+  position: sticky;
+}
