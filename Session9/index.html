@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width==device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    {
+      const student  = [
+        {
+          name: 'Name 1',
+          mark: 10
+        },
+        {
+          name: 'Name 2',
+          mark: 5
+        },
+        {
+          name: 'Name 3',
+          mark: 7
+        },
+        {
+          name: 'Name 4',
+          mark: 8
+        }
+      ]
+      
+     
+      let maxMarkStd = null
+      let maxMark = 0
+      for(let element of student){
+        if(element.mark > maxMarkStd){
+          maxMarkStd = element.mark
+          maxMark = element
+        }
+      }
+      console.log(maxMarkStd);
+
+      const studentGoodMark = []
+
+      student.forEach(e => {
+          if (e.mark > 8) {
+              studentGoodMark.push(e)
+          }
+      })
+
+      studentGoodMark.forEach(e => {
+          e.graduated = true
+      })
+
+      console.log(studentGoodMark);
+
+      // min
+      let minMarkStd = null
+      let minMark = Number.MAX_VALUE
+
+        for (let element of student) {
+            if (element.mark < minMark) {
+                minMark = element.mark
+                minMarkStd = element
+            }
+        }
+
+        console.log(minMarkStd);
+
+    }
+  </script>
+</body>
+</html>

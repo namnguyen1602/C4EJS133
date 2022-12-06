@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form id="form-signin">
+    <label for="email">Email</label>
+    <input id="email" type="text"><br>
+    <label for="password">Password</label>
+    <input type="password" id="password"><br>
+    <button type="submit">Dang Nhap</button>
+  </form>
+
+  <script>
+    const formSignin = document.getElementById('form-signin')
+
+    formSignin.addEventListener('submit', (event)=>{
+      event.preventDefault()
+      const email = event.target.email.value
+      const password = event.target.password.value
+      
+      if(email == 'admin@gmail.com' && password=='123456'){
+        window.location.href= 'index.html'
+      }else{
+        window.location.href='#'
+      }
+      
+    })
+
+    
+  </script>
+</body>
+</html>
